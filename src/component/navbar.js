@@ -1,7 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-
+import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
 
 function DrawerAppBar() {
@@ -21,9 +21,12 @@ function DrawerAppBar() {
                         sx={{
                             color: "#fff",
                             marginRight: 5,
+                            fontSize: "20px",
+                            padding: 5,
                         }}
                     >
-                        POST BLOGS
+                        <AddIcon style={{padding: 5, color: "white"}} /> POST
+                        BLOGS
                     </Button>
                 </Box>
             </AppBar>
