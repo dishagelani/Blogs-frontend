@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../component/navbar";
 import "../App.css";
 import Blogcontent from "../assets/data/blogcontent.json";
+
 export const Blogs = () => {
     return (
         <div>
-            <Navbar />
             <div className="outer-blog-body">
                 <div className="inner-blog-body">
                     {Blogcontent?.map((blog) => (

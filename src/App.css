@@ -1,5 +1,5 @@
 body {
-    background-color: #282c34;
+    /* background-color: #282c34; */
 }
 .outer-blog-body {
     color: whitesmoke;
@@ -89,6 +89,12 @@ p {
 
 .btn_primary:hover {
     box-shadow: 0px 5px 1rem rgba(0, 0, 0, 0.3);
+}
+
+.outer-text-editor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes App-logo-spin {
