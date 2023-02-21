@@ -29,18 +29,18 @@ const PostBlogs = () => {
 };
 PostBlogs.modules = {
     toolbar: [
-        [{header: "1"}, {header: "2"}, {font: []}],
-        [{size: []}],
-        ["bold", "italic", "underline", "strike", "blockquote"],
-        [{color: []}][
-            ({list: "ordered"},
-            {list: "bullet"},
-            {indent: "-1"},
-            {indent: "+1"})
-        ],
-        ["link", "image", "video"],
-        ["clean"],
+        // [{header: 1}, {header: 2}],
+        [{size: ["small", false, "large", "huge"]}], // custom dropdown
+        [{header: [1, 2, 3, 4, 5, 6, false]}],
+        [{font: []}],
+        ["bold", "italic", "underline", "strike", {color: []}],
+        ["blockquote", "code-block"],
+        [{list: "ordered"}, {list: "bullet"}],
+        [{script: "sub"}, {script: "super"}], // superscript/subscript
+        [{indent: "-1"}, {indent: "+1"}], // outdent/indent
+        [{align: []}],
     ],
+
     clipboard: {
         matchVisual: false,
     },
@@ -60,7 +60,10 @@ PostBlogs.formats = [
     "blockquote",
     "list",
     "bullet",
+    "script",
+    "color",
     "indent",
+    "align",
     "link",
     "image",
     "video",
